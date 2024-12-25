@@ -1,6 +1,6 @@
 # This dockerfile is used to build up from a base image to create an image with cached results of running "prepare.sh".
 # Other image contents: https://github.com/microsoft/vscode-dev-containers/blob/master/repository-containers/images/github.com/microsoft/vscode/.devcontainer/base.Dockerfile
-FROM mcr.microsoft.com/vscode/devcontainers/repos/microsoft/vscode:dev
+FROM mcr.microsoft.com/vscode/devcontainers/repos/CasP0/vscode:dev
 
 ARG USERNAME=node
 COPY --chown=${USERNAME}:${USERNAME} . /repo-source-tmp/

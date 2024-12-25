@@ -91,3 +91,17 @@ The "TURISMO" feature or module can be customized using the following configurat
 - `turismo.enable`: Enable or disable the TURISMO feature. Default is `true`.
 - `turismo.theme`: Set the theme for the TURISMO feature. Available options are `light` and `dark`. Default is `light`.
 - `turismo.shortcuts`: Configure custom keyboard shortcuts for TURISMO commands. Default is an empty object `{}`.
+
+## Cloning the Repository
+
+To clone the repository, follow these steps:
+
+1. Open a terminal or command prompt.
+2. Navigate to the directory where you want to clone the repository.
+3. Run the following command:
+
+```bash
+git clone https://github.com/microsoft/vscode.git
+```
+
+This will create a local copy of the repository on your machine.

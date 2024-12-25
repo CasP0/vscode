@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# This file simply wraps the dockeer build command used to build the image with the
+# This file simply wraps the docker build command used to build the image with the
 # cached result of the commands from "prepare.sh" and pushes it to the specified
 # container image registry.
 
