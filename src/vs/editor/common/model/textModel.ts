@@ -3040,6 +3040,36 @@ export class TextModel extends Disposable implements model.ITextModel {
 		// Columns start with 1.
 		return indentOfLine(this.getLineContent(lineNumber)) + 1;
 	}
+
+	public static mergeBranchesOnSameLane(branches: any[]): any[] {
+		const mergedBranches: any[] = [];
+		const branchMap: { [key: string]: any } = {};
+
+		for (const branch of branches) {
+			const lane = branch.lane;
+			if (!branchMap[lane]) {
+				branchMap[lane] = branch;
+			} else {
+				branchMap[lane] = this._mergeTwoBranches(branchMap[lane], branch);
+			}
+		}
+
+		for (const lane in branchMap) {
+			mergedBranches.push(branchMap[lane]);
+		}
+
+		return mergedBranches;
+	}
+
+	private static _mergeTwoBranches(branch1: any, branch2: any): any {
+		// Implement the logic to merge two branches
+		// This is a placeholder implementation and should be replaced with actual merging logic
+		return {
+			...branch1,
+			...branch2,
+			merged: true
+		};
+	}
 }
 
 function indentOfLine(line: string): number {
