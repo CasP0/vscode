@@ -105,3 +105,17 @@ git clone https://github.com/microsoft/vscode.git
 ```
 
 This will create a local copy of the repository on your machine.
+
+## Using the `gh pr checkout` Command
+
+The `gh pr checkout` command is a part of the GitHub CLI tool that allows you to check out a pull request locally. This can be useful for reviewing and testing changes before merging them.
+
+### Example
+
+To check out a pull request with the ID 3, use the following command:
+
+```bash
+gh pr checkout 3
+```
+
+This will create a new branch based on the pull request and switch to it.
