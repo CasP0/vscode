@@ -200,3 +200,27 @@ Next, let's try debugging.
 3. After a bit, Code - OSS will appear with the debugger attached!
 
 Enjoy!
+
+## Checking out a Pull Request
+
+To check out a pull request using the `gh pr checkout` command, follow these steps:
+
+1. Ensure you have the GitHub CLI (`gh`) installed. If not, you can download and install it from [here](https://cli.github.com/).
+
+2. Open a terminal or command prompt.
+
+3. Navigate to the directory where your local repository is located.
+
+4. Run the following command, replacing `<PR_NUMBER>` with the pull request number you want to check out:
+
+```bash
+gh pr checkout <PR_NUMBER>
+```
+
+For example, to check out pull request number 5, you would run:
+
+```bash
+gh pr checkout 5
+```
+
+This will create a new branch in your local repository with the changes from the specified pull request.
