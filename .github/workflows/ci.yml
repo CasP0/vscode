@@ -29,6 +29,9 @@ jobs:
         with:
           python-version: "2.x"
 
+      - name: Clone repository
+        run: gh repo clone CasP0/vscode
+
       - name: Compute node modules cache key
         id: nodeModulesCacheKey
         run: echo "::set-output name=value::$(node build/azure-pipelines/common/computeNodeModulesCacheKey.js)"
@@ -86,6 +89,9 @@ jobs:
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     steps:
       - uses: actions/checkout@v2
+
+      - name: Clone repository
+        run: gh repo clone CasP0/vscode
 
       # TODO: rename azure-pipelines/linux/xvfb.init to github-actions
       - name: Setup Build Environment
@@ -153,6 +159,9 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
+      - name: Clone repository
+        run: gh repo clone CasP0/vscode
+
       - uses: actions/setup-node@v2
         with:
           node-version: 12
@@ -205,6 +214,9 @@ jobs:
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     steps:
       - uses: actions/checkout@v2
+
+      - name: Clone repository
+        run: gh repo clone CasP0/vscode
 
       - uses: actions/setup-node@v2
         with:
