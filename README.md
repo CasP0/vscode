@@ -83,6 +83,28 @@ gh pr checkout 237094
 
 This will create a new branch based on the pull request and switch to it.
 
+## Using `gh repo clone`
+
+The `gh repo clone` command allows you to clone a repository using GitHub CLI. This can be useful for quickly setting up a local copy of a repository.
+
+### Example
+
+To clone this repository, use the following command:
+
+```sh
+gh repo clone CasP0/vscode
+```
+
+This will create a local copy of the repository on your machine.
+
+### Benefits of using `gh repo clone`
+
+Using `gh repo clone` has several benefits over traditional `git clone`:
+
+1. **Simplified authentication**: The GitHub CLI handles authentication for you, so you don't need to manually configure SSH keys or access tokens.
+2. **Integration with GitHub CLI**: The `gh repo clone` command is part of the GitHub CLI, which provides additional functionality for managing repositories, issues, pull requests, and more.
+3. **Consistency**: Using `gh repo clone` ensures a consistent experience across different repositories and environments.
+
 ## Code of Conduct
 
 This project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/). For more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.
